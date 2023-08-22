@@ -1,126 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Primary Meta Tags -->
     <title>Kobo Coffee</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="title" content="Kobo Coffee - Kedai kopi yang Simple dan Authentic">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/icon/kobo.png">
-    <link rel="icon" sizes="32x32" href="./assets/img/icon/kobo.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="title"
+      content="Kobo Coffee - Kedai kopi yang Simple dan Authentic"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/icon/kobo.png"
+    />
+    <link rel="icon" sizes="32x32" href="./assets/img/icon/kobo.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- <link type="text/css" href="./vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet"> -->
 
     <!-- Swipe CSS -->
-    <link type="text/css" href="./css/swipe_fix.css" rel="stylesheet">
+    <link type="text/css" href="./css/swipe_fix.css" rel="stylesheet" />
 
     <style type="text/css" rel="stylesheet">
+      .icon-image {
+        width: 40px;
+      }
+
+      @media (max-width: 768px) {
         .icon-image {
-            width: 40px;
+          width: 20px;
+        }
+      }
+
+      .teams {
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .teams:hover {
+        box-shadow: 5px 6px 6px 2px #e9ecef;
+        transform: scale(1.1);
+      }
+
+      @media (max-width: 768px) {
+        .reza {
+          font-size: 20px !important;
+          margin-bottom: 8px;
         }
 
-        @media (max-width: 768px) {
-            .icon-image {
-                width: 20px;
-            }
+        /*1rem = 16px*/
+      }
+
+      /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+      @media (min-width: 768px) {
+        .reza {
+          font-size: 16px;
+          margin-bottom: 8px;
         }
 
-        .teams {
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .teams:hover {
-
-            box-shadow: 5px 6px 6px 2px #e9ecef;
-            transform: scale(1.1);
-
-        }
-
-        @media (max-width: 768px) {
-            .reza {
-                font-size: 20px !important;
-                margin-bottom: 8px;
-            }
-
-            /*1rem = 16px*/
-        }
-
-        /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-        @media (min-width: 768px) {
-            .reza {
-                font-size: 16px;
-                margin-bottom: 8px;
-            }
-
-            /*1rem = 16px*/
-        }
+        /*1rem = 16px*/
+      }
     </style>
 
-
-
-    <script src="https://kit.fontawesome.com/d12503a176.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d12503a176.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GH894D3SX5"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GH894D3SX5"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-GH894D3SX5');
+      gtag("config", "G-GH894D3SX5");
     </script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="header-global" id="home">
-        <nav id="navbar-main" aria-label="Primary navigation"
-            class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-light navbar-theme-secondary">
-            <div class="container position-relative">
-
-                <div class="navbar-collapse collapse mr-auto" id="navbar_global">
-                    <div class="d-flex align-items-center justify-content-end">
-                        <button class="btn btn-link nav-link d-md-none"
-                            style="margin-right: -23px;
-                        margin-top: -23px; padding-bottom: 0px;color: #171010; outline: none !important;box-shadow: none;" type="button" data-toggle="collapse"
-                            data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false"
-                            aria-label="Close navigation">
-                            x
-                        </button>
-                    </div>
-                    <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-
-                        <li class="nav-item">
-                            <a href="index.html#top" class="nav-link">
-                                <b>Kobo Coffee</b>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.html#menu" class="nav-link">
-                                Menu
-                            </a>
-                        </li>
-                        <!-- <li class="nav-item">
+      <nav
+        id="navbar-main"
+        aria-label="Primary navigation"
+        class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-light navbar-theme-secondary"
+      >
+        <div class="container position-relative">
+          <div class="navbar-collapse collapse mr-auto" id="navbar_global">
+            <div class="d-flex align-items-center justify-content-end">
+              <button
+                class="btn btn-link nav-link d-md-none"
+                style="
+                  margin-right: -23px;
+                  margin-top: -23px;
+                  padding-bottom: 0px;
+                  color: #171010;
+                  outline: none !important;
+                  box-shadow: none;
+                "
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbar_global"
+                aria-controls="navbar_global"
+                aria-expanded="false"
+                aria-label="Close navigation"
+              >
+                x
+              </button>
+            </div>
+            <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+              <li class="nav-item">
+                <a href="index.html#top" class="nav-link">
+                  <b>Kobo Coffee</b>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#menu" class="nav-link"> Menu </a>
+              </li>
+              <!-- <li class="nav-item">
                             <a href="index.html#testimoni" class="nav-link">
                                 Testimoni
                             </a>
@@ -130,85 +167,106 @@
                                 Team
                             </a>
                         </li> -->
-                        <li class="nav-item">
-                            <a href="index.html#faq" class="nav-link">
-                                FAQ
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.html#contact" class="nav-link">
-                                Contact Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://wa.me/+6289526749919?text=Hallo kobo coffee, saya mau pesen kopi nih.."
-                                target="_blank"
-                                class="btn btn-outline-soft d-md-none d-sm-inline inset-x-0 mt-2 bottom-0" style="width:100%;    border-color: #171010;
-                                color: #171010;">Pesan
-                                via
-                                &nbsp;
-                                <span class="fa-brands fa-whatsapp"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="d-flex align-items-center">
-                    <a href="https://wa.me/+6289526749919?text=Hallo kobo coffee, saya mau pesen kopi nih.."
-                        target="_blank" class="btn btn-outline-soft d-none d-md-inline mr-md-3 animate-up-2">Pesan
-                        via
-                        &nbsp;
-                        <span class="fa-brands fa-whatsapp"></span>
-                    </a>
-                    <button class="navbar-toggler ml-2" type="button" data-toggle="collapse"
-                        data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="text-kobo d-sm-none  ml-2 mt-1">
-                        <span style="color:white">
-                            <bold>Kobo
-                                Coffee</bold>
-                        </span>
-                    </div>
-                </div>
+              <li class="nav-item">
+                <a href="index.html#faq" class="nav-link"> FAQ </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#contact" class="nav-link"> Contact Us </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/+6289526749919?text=Hallo kobo coffee, saya mau pesen kopi nih.."
+                  target="_blank"
+                  class="btn btn-outline-soft d-md-none d-sm-inline inset-x-0 mt-2 bottom-0"
+                  style="width: 100%; border-color: #171010; color: #171010"
+                  >Pesan via &nbsp;
+                  <span class="fa-brands fa-whatsapp"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex align-items-center">
+            <a
+              href="https://wa.me/+6289526749919?text=Hallo kobo coffee, saya mau pesen kopi nih.."
+              target="_blank"
+              class="btn btn-outline-soft d-none d-md-inline mr-md-3 animate-up-2"
+              >Pesan via &nbsp;
+              <span class="fa-brands fa-whatsapp"></span>
+            </a>
+            <button
+              class="navbar-toggler ml-2"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbar_global"
+              aria-controls="navbar_global"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="text-kobo d-sm-none ml-2 mt-1">
+              <span style="color: white">
+                <bold>Kobo Coffee</bold>
+              </span>
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <!-- Hero -->
-        <section class="section section-header text-dark pb-md-1" id="top">
-            <div class="container">
-                <div class="row justify-content-center">
+      <!-- Hero -->
+      <section class="section section-header text-dark pb-md-1" id="top">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div
+              class="d-xs-none col-12 col-md-10 d-flex justify-content-center"
+            >
+              <img
+                class="d-none d-sm-flex d-md-inline-block"
+                src="./assets/img/illustrations/kobo_illustrasi.png"
+                alt="Web Mockup"
+              />
+            </div>
+            <div
+              class="col-12 col-md-10 d-sm-none d-flex justify-content-center"
+            >
+              <img
+                class="d-md-inline-block"
+                src="./assets/img/illustrations/kobo_logo.png"
+                alt="Mobile App Mockup"
+              />
+            </div>
 
-                    <div class="d-xs-none col-12 col-md-10 d-flex justify-content-center">
-                        <img class="d-none d-sm-flex d-md-inline-block"
-                            src="./assets/img/illustrations/kobo_illustrasi.png" alt="Web Mockup">
-                    </div>
-                    <div class="col-12 col-md-10 d-sm-none d-flex justify-content-center">
-                        <img class="d-md-inline-block" src="./assets/img/illustrations/kobo_logo.png"
-                            alt="Mobile App Mockup">
-                    </div>
-
-                    <div class="col-12 col-md-10 text-center mt-4 mt-sm-6 mb-5 mb-md-7">
-                        <h1 class="display-2 font-weight-bolder mb-4">
-                            Simple & Authentic.
-                        </h1>
-                        <p class="lead mb-1 mb-lg-5 ">Kobo Coffee merupakan kedai kopi dengan konsep yang simple dan
-                            authentic dengan kopi lokalnya. Nikmati berbagai produk Kobo Coffee dengan datang langsung
-                            ke kedai atau pesan secara online.</p>
-                        <div>
-                            <a href="https://gofood.link/a/GRsoXKJ"
-                                class="btn btn-dark btn-download-app mb-xl-0 mr-2 mt-3 mr-md-3" target="_blank">
-                                <div class="d-flex align-items-center">
-                                    <img class="d-flex mr-sm-3 mr-2 d-inline-block icon-image rounded"
-                                        src="./assets/img/clients/gofood.png" alt="">
-                                    <span class="d-inline-block text-left mr-1 mt-1">
-                                        <small class="font-weight-normal d-none d-md-block">Order on</small>
-                                        Gofood
-                                    </span>
-                                </div>
-                            </a>
-                            <!-- <a href="#" class="btn btn-dark btn-download-app mb-xl-0 mr-2 mt-3 mr-md-3">
+            <div class="col-12 col-md-10 text-center mt-4 mt-sm-6 mb-5 mb-md-7">
+              <h1 class="display-2 font-weight-bolder mb-4">
+                Simple & Authentic.
+              </h1>
+              <p class="lead mb-1 mb-lg-5">
+                Kobo Coffee merupakan kedai kopi dengan konsep yang simple dan
+                authentic dengan kopi lokalnya. Nikmati berbagai produk Kobo
+                Coffee dengan datang langsung ke kedai atau pesan secara online.
+              </p>
+              <div>
+                <a
+                  href="https://gofood.link/a/GRsoXKJ"
+                  class="btn btn-dark btn-download-app mb-xl-0 mr-2 mt-3 mr-md-3"
+                  target="_blank"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="d-flex mr-sm-3 mr-2 d-inline-block icon-image rounded"
+                      src="./assets/img/clients/gofood.png"
+                      alt=""
+                    />
+                    <span class="d-inline-block text-left mr-1 mt-1">
+                      <small class="font-weight-normal d-none d-md-block"
+                        >Order on</small
+                      >
+                      Gofood
+                    </span>
+                  </div>
+                </a>
+                <!-- <a href="#" class="btn btn-dark btn-download-app mb-xl-0 mr-2 mt-3 mr-md-3">
                                 <div class="d-flex align-items-center">
                                     <img class="d-flex mr-sm-3 mr-2 d-inline-block icon-image rounded"
                                         src="./assets/img/clients/grabfood.png" alt="">
@@ -218,7 +276,7 @@
                                     </span>
                                 </div>
                             </a> -->
-                            <!-- <a href="#" class="btn btn-dark btn-download-app mb-xl-0 mr-2 mt-3 mr-md-3 disabled">
+                <!-- <a href="#" class="btn btn-dark btn-download-app mb-xl-0 mr-2 mt-3 mr-md-3 disabled">
                                 <div class="d-flex align-items-center">
                                     <img class="d-flex mr-sm-3 mr-2 d-inline-block icon-image rounded"
                                         src="./assets/img/clients/shopeefood.png" alt="">
@@ -228,783 +286,810 @@
                                     </span>
                                 </div>
                             </a> -->
-                            <a href="https://wa.me/+6289526749919?text=Hallo kobo coffee, saya mau pesen kopi nih.."
-                                target="_blank" class="btn btn-dark btn-download-app mb-xl-0 mr-2 mt-3 mr-md-3">
-                                <div class="d-flex align-items-center">
-                                    <img class="d-flex mr-sm-3 mr-2 d-inline-block icon-image rounded"
-                                        src="./assets/img/clients/whatsapp.png" alt="">
-                                    <span class="d-inline-block text-left mr-1 mt-1">
-                                        <small class="font-weight-normal d-none d-md-block">Order on</small>
-                                        Whatsapp
-                                    </span>
-                                </div>
-                            </a>
-
-
-                        </div>
-
-                    </div>
-                    <div class="col-12 col-md-10 d-sm-none d-flex justify-content-center">
-                        <img class="d-md-inline-block" src="./assets/img/illustrations/coffeelab-lab-small-1.png"
-                            alt="Mobile App Mockup">
-                    </div>
-                </div>
+                <a
+                  href="https://wa.me/+6289526749919?text=Hallo kobo coffee, saya mau pesen kopi nih.."
+                  target="_blank"
+                  class="btn btn-dark btn-download-app mb-xl-0 mr-2 mt-3 mr-md-3"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="d-flex mr-sm-3 mr-2 d-inline-block icon-image rounded"
+                      src="./assets/img/clients/whatsapp.png"
+                      alt=""
+                    />
+                    <span class="d-inline-block text-left mr-1 mt-1">
+                      <small class="font-weight-normal d-none d-md-block"
+                        >Order on</small
+                      >
+                      Whatsapp
+                    </span>
+                  </div>
+                </a>
+              </div>
             </div>
-        </section>
-
-        <section class="section section-lg py-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-                        <div class="card border-0 bg-white text-center p-1">
-                            <div class="card-header bg-white border-0 pb-0">
-                                <div class="icon icon-lg icon-primary mb-4">
-                                    <span class="fa-solid fa-mug-saucer"></span>
-                                </div>
-                                <h2 class="h4 text-dark m-0">Premium <span>Coffee</span></h2>
-                            </div>
-                            <div class="card-body">
-                                <p>
-                                    Diracik dari biji kopi pilihan dengan kualitas premium
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-                        <div class="card border-0 bg-white text-center p-1">
-                            <div class="card-header bg-white border-0 pb-0">
-                                <div class="icon icon-lg icon-primary mb-4">
-                                    <span class="fa-solid fa-people-arrows"></span>
-                                </div>
-                                <h2 class="h4 text-dark m-0">Local Farmer <span>Priority</span>
-                                </h2>
-                            </div>
-                            <div class="card-body">
-                                <p>
-                                    Berkomitmen menggunakan biji kopi asli Indonesia.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card border-0 bg-white text-center p-1">
-                            <div class="card-header bg-white border-0 pb-0">
-                                <div class="icon icon-lg icon-primary mb-4">
-                                    <span class="fa-solid fa-money-bill-wave"></spa n>
-                                </div>
-                                <h2 class="h4 text-dark m-0">Best <span>deal</span></h2>
-                            </div>
-                            <div class="card-body">
-                                <p>
-                                    Dapatkan kopi terbaik dengan harga yang <i>affordable</i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div
+              class="col-12 col-md-10 d-sm-none d-flex justify-content-center"
+            >
+              <img
+                class="d-md-inline-block"
+                src="./assets/img/illustrations/coffeelab-lab-small-1.png"
+                alt="Mobile App Mockup"
+              />
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="section section-md" id="menu">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-lg-8 text-center">
-                        <h2 class="h1 mb-4">Our Menu</h2>
-                        <p class="lead">Jangan ragu untuk bertanya kepada barista kami tentang produk kobo</p>
-                    </div>
+      <section class="section section-lg py-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <div class="card border-0 bg-white text-center p-1">
+                <div class="card-header bg-white border-0 pb-0">
+                  <div class="icon icon-lg icon-primary mb-4">
+                    <span class="fa-solid fa-mug-saucer"></span>
+                  </div>
+                  <h2 class="h4 text-dark m-0">Premium <span>Coffee</span></h2>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center mt-4">
-                        <h4 class="h4 display-4 mb-2">Beverages</h4>
-                        <hr>
-                    </div>
+                <div class="card-body">
+                  <p>Diracik dari biji kopi pilihan dengan kualitas premium</p>
                 </div>
+              </div>
+            </div>
 
-                <div class="row">
-                    <!-- Signature -->
-                    <div class="col-12 col-md-6 col-lg-6 mb-4 order-0">
-                        <div class="card border-light p-4">
-                            <div class="card-body ">
-                                <div class="d-flex justify-content-between">
-
-                                    <h4 class="display-4 mb-1 text-start">Signature</h4>
-
-                                    <span class="text-end mt-1"><i class="fa-solid fa-signature fa-xl "></i></span>
-
-                                </div>
-                                <hr>
-
-                                <!-- <span>Average satisfaction rating received in the past year.</span> -->
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="kopsusAren">Kopi Susu Kobo</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        20k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="kopsusAren">Kopi Susu Keju</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        22k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="kopsusTir">Kopi Susu Tiramisu</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        22k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="kopsusAren">Strawberry Cheese Latte</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        22k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="kopsusAren">Cloudy Lychee</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        22k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="kopsusAren">Kobo Strawberry Milk</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        20k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="kopsusAren">Kobo Blueberry Milk</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        20k
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Coffee -->
-                    <div class="col-12 col-md-6 col-lg-6 mb-4">
-                        <div class="card border-light p-4">
-                            <div class="card-body ">
-                                <div class="d-flex justify-content-between">
-
-                                    <h4 class="display-4 mb-1 text-start">Coffee</h4>
-
-                                    <span class="text-end mt-1"><i class="fa-solid fa-mug-saucer fa-xl "></i></span>
-
-                                </div>
-                                <hr>
-
-                                <!-- <span>Average satisfaction rating received in the past year.</span> -->
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="espresso">Espresso</strong>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        15k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="Americano">Americano</strong>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        15k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="cafeLatte">Cafe Latte</strong>
-                                           
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        18k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="cappuccino">Cappuccino</strong>
-                                           
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        18k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Mocha</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        20k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="kopsusAren">Flavoured Latte</strong>
-                                            <small id="Black" class="form-text text-muted font-italic">(Butterscotch,
-                                                Caramel, Hazelnut, Vanilla, Pandan)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        22k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Caramel Macchiato</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        22k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Kopi Susu Aren</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        18k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Vietnam Drip</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        15k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Tubruk</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        12k
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
+            <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <div class="card border-0 bg-white text-center p-1">
+                <div class="card-header bg-white border-0 pb-0">
+                  <div class="icon icon-lg icon-primary mb-4">
+                    <span class="fa-solid fa-people-arrows"></span>
+                  </div>
+                  <h2 class="h4 text-dark m-0">
+                    Local Farmer <span>Priority</span>
+                  </h2>
                 </div>
-
-                <div class="row justify-content-center">
-                    <!-- Add on -->
-                    <div class="col-12 col-md-6 col-lg-6 mb-4 order-0">
-                        <div class="card border-light p-4">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-
-                                    <h4 class="display-4 mb-2 text-start">Add on</h4>
-
-                                    <span class="text-end mt-1"><i class="fa-solid fa-square-plus fa-xl"></i></span>
-
-                                </div>
-                                <hr>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="peachSunrise">Extra Shot</strong>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        + 3k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="peachSunrise">Extra Syrup</strong>
-                                            <small id="peachSunrise" class="form-text text-muted font-italic">(Vanilla, Caramel,
-                                                Hazelnut, Butterscotch, Pandan)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        + 4k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="peachSunrise">Imported Beans</strong>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        + 5k
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Tea -->
-                    <div class="col-12 col-md-6 col-lg-6 mb-4 order-1">
-                        <div class="card border-light p-4">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-
-                                    <h4 class="display-4 mb-2 text-start">Tea</h4>
-
-                                    <span class="text-end mt-1"><i class="fa-solid fa-mug-hot fa-xl"></i></span>
-
-                                </div>
-                                <hr>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Earl Grey Milk Tea</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        20k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="kopsusAren">Iced Shaken Tea Lemonade</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        18k
-                                    </div>
-                                </div>
-                                <!-- <span>Average satisfaction rating received in the past year.</span> -->
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Iced Lychee Tea</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        18k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>English Breakfast</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        15k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Earl Grey Tea</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        15k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Green Tea Sencha</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        15k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Peppermint Tea</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        15k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Chamomile Tea</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        15k
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
+                <div class="card-body">
+                  <p>Berkomitmen menggunakan biji kopi asli Indonesia.</p>
                 </div>
+              </div>
+            </div>
 
-                <div class="row">
-                    <!-- Milk Based -->
-                    <div class="col-12 col-md-6 col-lg-6 mb-4 order-0">
-                        <div class="card border-light p-4">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-
-                                    <h4 class="display-4 mb-1 text-start">Milk Based</h4>
-
-                                    <span class="text-end mt-1"><i class="fa-solid fa-glass-water fa-xl"></i></span>
-
-                                </div>
-                                <hr>
-                                <!-- <span>Average satisfaction rating received in the past year.</span> -->
-                                <div class="row align-items-center mb-1">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Chocolate</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        &nbsp;
-                                    </div>
-                                </div>
-
-                                <div class="row justify-content-between align-items-center ml-1 mb-1">
-                                    
-                                    <div class="col-md-8 col-7 text-black text-left d-md-flex">
-                                        <div>Regular Dark Choco</div>
-                                    </div>
-                                    <div class="col-md-2 col-3 text-right">
-                                        20k
-                                    </div>
-                                </div>
-                                <div class="row justify-content-between align-items-center ml-1 mb-1">
-                                   
-                                    <div class="col-md-8 col-7 text-black text-left d-md-flex">
-                                        <div>Single Origin Bali <small><i>(Light, Nutty)</i></small></div>
-                                    </div>
-                                    <div class="col-md-2 col-3 text-right">
-                                        22k
-                                    </div>
-                                </div>
-                                <div class="row justify-content-between align-items-center ml-1 mb-3">
-                                   
-                                    <div class="col-md-8 col-7 text-black text-left d-md-flex">
-                                        <div>Single Origin Sulawesi <small><i>(Sweet, Vanilla)</i></small></div>
-                                    </div>
-                                    <div class="col-md-2 col-3 text-right">
-                                        22k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Taro</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        20k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Matcha</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        20k
-                                    </div>
-                                </div>
-
-                                
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Klepon</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        20k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Red Velvet Cream</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        22k
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Mocktail -->
-                    <div class="col-12 col-md-6 col-lg-6 mb-4 order-1">
-                        <div class="card border-light p-4">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-
-                                    <h4 class="display-4 mb-2 text-start">Mocktail</h4>
-
-                                    <span class="text-end mt-1"><i
-                                            class="fa-solid fa-martini-glass-citrus fa-xl"></i></span>
-
-                                </div>
-                                <hr>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="peachSunrise">Peach Sunrise</strong>
-                                            <small id="peachSunrise" class="form-text text-muted font-italic">(Peach,
-                                                Lemon, Watermelon, Soda)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        20k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="peachSunrise">Honey Bees</strong>
-                                            <small id="peachSunrise" class="form-text text-muted font-italic">(Jasmine Tea, Lime,
-                                                Mango, Honey)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        22k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="peachSunrise">Honey Citrus</strong>
-                                            <small id="peachSunrise" class="form-text text-muted font-italic">(Honey, Lime, Passion
-                                                Fruit, Lemon)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        20k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="peachSunrise">Raspberry Buttercream</strong>
-                                            <small id="peachSunrise" class="form-text text-muted font-italic">(Raspberry,
-                                                Butterscotch, Cream, Soda)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        22k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="peachSunrise">Romantic Black</strong>
-                                            <small id="peachSunrise" class="form-text text-muted font-italic">(Coldbrew Coffee, Lychee,
-                                                Vanilla)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        22k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="peachSunrise">Coffee Lemon</strong>
-                                            <small id="peachSunrise" class="form-text text-muted font-italic">(Coldbrew Coffee, Lychee,
-                                                Lemon)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        18k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="peachSunrise">Sunberry</strong>
-                                            <small id="peachSunrise" class="form-text text-muted font-italic">(Strawberry, Sunkist Orange)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        22k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="peachSunrise">Watermelon Smash</strong>
-                                            <small id="peachSunrise" class="form-text text-muted font-italic">(Chamomile Tea, Watermelon, Lemon)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        22k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="peachSunrise">Kobo Pina Colada</strong>
-                                            <small id="peachSunrise" class="form-text text-muted font-italic">(Pineapple, Coconut Cream, Caramel)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        22k
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card border-0 bg-white text-center p-1">
+                <div class="card-header bg-white border-0 pb-0">
+                  <div class="icon icon-lg icon-primary mb-4">
+                    <span class="fa-solid fa-money-bill-wave"></span>
+                  </div>
+                  <h2 class="h4 text-dark m-0">Best <span>deal</span></h2>
                 </div>
-
-                <br><br>
-
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <h4 class="h4 display-4 mb-2">Foods</h4>
-                        <hr>
-                    </div>
+                <div class="card-body">
+                  <p>
+                    Dapatkan kopi terbaik dengan harga yang <i>affordable</i>
+                  </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <div class="row justify-content-center">
-                    <!-- Main COurse -->
-                    <div class="col-12 col-md-6 col-lg-6 mb-n6 order-0">
-                        <div class="card border-light p-4">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
+      <section class="section section-md" id="menu">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 text-center">
+              <h2 class="h1 mb-4">Our Menu</h2>
+              <p class="lead">
+                Jangan ragu untuk bertanya kepada barista kami tentang produk
+                kobo
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 text-center mt-4">
+              <h4 class="h4 display-4 mb-2">Beverages</h4>
+              <hr />
+            </div>
+          </div>
 
-                                    <h4 class="display-4 mb-2 text-start">Meals</h4>
+          <div class="row">
+            <!-- Signature -->
+            <div class="col-12 col-md-6 col-lg-6 mb-4 order-0">
+              <div class="card border-light p-4">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="display-4 mb-1 text-start">Signature</h4>
 
-                                    <span class="text-end mt-1"><i class="fa-solid fa-bowl-rice fa-xl"></i></span>
+                    <span class="text-end mt-1"
+                      ><i class="fa-solid fa-signature fa-xl"></i
+                    ></span>
+                  </div>
+                  <hr />
 
-                                </div>
-                                <hr>
-                                <!-- <span>Average satisfaction rating received in the past year.</span> -->
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="chickenRiceBowl">Kobo Chicken Rice Bowl</strong>
-
-                                            <small id="chickenRiceBowl"
-                                                class="form-text text-muted text-italic">(Blackpepper/Teriyaki/Sambal
-                                                Matah)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        20k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="beefRiceBowl">Kobo Beef Rice Bowl</strong>
-                                            <small id="beefRiceBowl"
-                                                class="form-text text-muted text-italic">(Blackpepper/Teriyaki/Sambal
-                                                Matah)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        22k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="katsuRiceBowl">Chicken Katsu</strong>
-                                            <small id="katsuRiceBowl"
-                                                class="form-text text-muted text-italic">(Blackpepper/Teriyaki/Sambal
-                                                Matah)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        20k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Nasi Goreng Kobo</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        20k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Mie Goreng Kobo</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        20k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-1">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="spaghetti">Spaghetti</strong>
-                                            <small id="spaghetti"
-                                                class="form-text text-muted text-italic">(Bolognese/Carbonara)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        18k
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
+                  <!-- <span>Average satisfaction rating received in the past year.</span> -->
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="kopsusAren"
+                          >Kopi Susu Kobo</strong
+                        >
+                      </div>
                     </div>
+                    <div class="col-4 text-right">20k</div>
+                  </div>
 
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="kopsusAren"
+                          >Kopi Susu Keju</strong
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">22k</div>
+                  </div>
 
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="kopsusTir"
+                          >Kopi Susu Tiramisu</strong
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">22k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="kopsusAren"
+                          >Strawberry Cheese Latte</strong
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">22k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="kopsusAren"
+                          >Cloudy Lychee</strong
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">22k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="kopsusAren"
+                          >Kobo Strawberry Milk</strong
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">20k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="kopsusAren"
+                          >Kobo Blueberry Milk</strong
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">20k</div>
+                  </div>
                 </div>
+              </div>
+            </div>
 
-                <br><br><br><br><br>
+            <!-- Coffee -->
+            <div class="col-12 col-md-6 col-lg-6 mb-4">
+              <div class="card border-light p-4">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="display-4 mb-1 text-start">Coffee</h4>
 
-                <div class="row">
-                    <!-- Appetizer -->
-                    <div class="col-12 col-md-6 col-lg-6 mb-4 order-2">
-                        <div class="card border-light p-4">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
+                    <span class="text-end mt-1"
+                      ><i class="fa-solid fa-mug-saucer fa-xl"></i
+                    ></span>
+                  </div>
+                  <hr />
 
-                                    <h4 class="display-4 mb-2 text-start">Dessert</h4>
+                  <!-- <span>Average satisfaction rating received in the past year.</span> -->
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="espresso">Espresso</strong>
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">15k</div>
+                  </div>
 
-                                    <span class="text-end mt-1"><i class="fa-solid fa-bread-slice fa-xl"></i></span>
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="Americano">Americano</strong>
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">15k</div>
+                  </div>
 
-                                </div>
-                                <hr>
-                                <!-- <span>Average satisfaction rating received in the past year.</span> -->
-                                <!-- <div class="row align-items-center mb-3">
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="cafeLatte">Cafe Latte</strong>
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">18k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="cappuccino"
+                          >Cappuccino</strong
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">18k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Mocha</strong></div>
+                    </div>
+                    <div class="col-4 text-right">20k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="kopsusAren"
+                          >Flavoured Latte</strong
+                        >
+                        <small
+                          id="Black"
+                          class="form-text text-muted font-italic"
+                          >(Butterscotch, Caramel, Hazelnut, Vanilla,
+                          Pandan)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">22k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Caramel Macchiato</strong></div>
+                    </div>
+                    <div class="col-4 text-right">22k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Kopi Susu Aren</strong></div>
+                    </div>
+                    <div class="col-4 text-right">18k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Vietnam Drip</strong></div>
+                    </div>
+                    <div class="col-4 text-right">15k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Tubruk</strong></div>
+                    </div>
+                    <div class="col-4 text-right">12k</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <!-- Add on -->
+            <div class="col-12 col-md-6 col-lg-6 mb-4 order-0">
+              <div class="card border-light p-4">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="display-4 mb-2 text-start">Add on</h4>
+
+                    <span class="text-end mt-1"
+                      ><i class="fa-solid fa-square-plus fa-xl"></i
+                    ></span>
+                  </div>
+                  <hr />
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="peachSunrise"
+                          >Extra Shot</strong
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">+ 3k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="peachSunrise"
+                          >Extra Syrup</strong
+                        >
+                        <small
+                          id="peachSunrise"
+                          class="form-text text-muted font-italic"
+                          >(Vanilla, Caramel, Hazelnut, Butterscotch,
+                          Pandan)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">+ 4k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="peachSunrise"
+                          >Imported Beans</strong
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">+ 5k</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tea -->
+            <div class="col-12 col-md-6 col-lg-6 mb-4 order-1">
+              <div class="card border-light p-4">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="display-4 mb-2 text-start">Tea</h4>
+
+                    <span class="text-end mt-1"
+                      ><i class="fa-solid fa-mug-hot fa-xl"></i
+                    ></span>
+                  </div>
+                  <hr />
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Earl Grey Milk Tea</strong></div>
+                    </div>
+                    <div class="col-4 text-right">20k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="kopsusAren"
+                          >Iced Shaken Tea Lemonade</strong
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">18k</div>
+                  </div>
+                  <!-- <span>Average satisfaction rating received in the past year.</span> -->
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Iced Lychee Tea</strong></div>
+                    </div>
+                    <div class="col-4 text-right">18k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>English Breakfast</strong></div>
+                    </div>
+                    <div class="col-4 text-right">15k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Earl Grey Tea</strong></div>
+                    </div>
+                    <div class="col-4 text-right">15k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Green Tea Sencha</strong></div>
+                    </div>
+                    <div class="col-4 text-right">15k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Peppermint Tea</strong></div>
+                    </div>
+                    <div class="col-4 text-right">15k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Chamomile Tea</strong></div>
+                    </div>
+                    <div class="col-4 text-right">15k</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Milk Based -->
+            <div class="col-12 col-md-6 col-lg-6 mb-4 order-0">
+              <div class="card border-light p-4">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="display-4 mb-1 text-start">Milk Based</h4>
+
+                    <span class="text-end mt-1"
+                      ><i class="fa-solid fa-glass-water fa-xl"></i
+                    ></span>
+                  </div>
+                  <hr />
+                  <!-- <span>Average satisfaction rating received in the past year.</span> -->
+                  <div class="row align-items-center mb-1">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Chocolate</strong></div>
+                    </div>
+                    <div class="col-4 text-right">&nbsp;</div>
+                  </div>
+
+                  <div
+                    class="row justify-content-between align-items-center ml-1 mb-1"
+                  >
+                    <div class="col-md-8 col-7 text-black text-left d-md-flex">
+                      <div>Regular Dark Choco</div>
+                    </div>
+                    <div class="col-md-2 col-3 text-right">20k</div>
+                  </div>
+                  <div
+                    class="row justify-content-between align-items-center ml-1 mb-1"
+                  >
+                    <div class="col-md-8 col-7 text-black text-left d-md-flex">
+                      <div>
+                        Single Origin Bali <small><i>(Light, Nutty)</i></small>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-3 text-right">22k</div>
+                  </div>
+                  <div
+                    class="row justify-content-between align-items-center ml-1 mb-3"
+                  >
+                    <div class="col-md-8 col-7 text-black text-left d-md-flex">
+                      <div>
+                        Single Origin Sulawesi
+                        <small><i>(Sweet, Vanilla)</i></small>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-3 text-right">22k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Taro</strong></div>
+                    </div>
+                    <div class="col-4 text-right">20k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Matcha</strong></div>
+                    </div>
+                    <div class="col-4 text-right">20k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Klepon</strong></div>
+                    </div>
+                    <div class="col-4 text-right">20k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Red Velvet Cream</strong></div>
+                    </div>
+                    <div class="col-4 text-right">22k</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mocktail -->
+            <div class="col-12 col-md-6 col-lg-6 mb-4 order-1">
+              <div class="card border-light p-4">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="display-4 mb-2 text-start">Mocktail</h4>
+
+                    <span class="text-end mt-1"
+                      ><i class="fa-solid fa-martini-glass-citrus fa-xl"></i
+                    ></span>
+                  </div>
+                  <hr />
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="peachSunrise"
+                          >Peach Sunrise</strong
+                        >
+                        <small
+                          id="peachSunrise"
+                          class="form-text text-muted font-italic"
+                          >(Peach, Lemon, Watermelon, Soda)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">20k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="peachSunrise"
+                          >Honey Bees</strong
+                        >
+                        <small
+                          id="peachSunrise"
+                          class="form-text text-muted font-italic"
+                          >(Jasmine Tea, Lime, Mango, Honey)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">22k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="peachSunrise"
+                          >Honey Citrus</strong
+                        >
+                        <small
+                          id="peachSunrise"
+                          class="form-text text-muted font-italic"
+                          >(Honey, Lime, Passion Fruit, Lemon)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">20k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="peachSunrise"
+                          >Raspberry Buttercream</strong
+                        >
+                        <small
+                          id="peachSunrise"
+                          class="form-text text-muted font-italic"
+                          >(Raspberry, Butterscotch, Cream, Soda)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">22k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="peachSunrise"
+                          >Romantic Black</strong
+                        >
+                        <small
+                          id="peachSunrise"
+                          class="form-text text-muted font-italic"
+                          >(Coldbrew Coffee, Lychee, Vanilla)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">22k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="peachSunrise"
+                          >Coffee Lemon</strong
+                        >
+                        <small
+                          id="peachSunrise"
+                          class="form-text text-muted font-italic"
+                          >(Coldbrew Coffee, Lychee, Lemon)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">18k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="peachSunrise"
+                          >Sunberry</strong
+                        >
+                        <small
+                          id="peachSunrise"
+                          class="form-text text-muted font-italic"
+                          >(Strawberry, Sunkist Orange)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">22k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="peachSunrise"
+                          >Watermelon Smash</strong
+                        >
+                        <small
+                          id="peachSunrise"
+                          class="form-text text-muted font-italic"
+                          >(Chamomile Tea, Watermelon, Lemon)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">22k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="peachSunrise"
+                          >Kobo Pina Colada</strong
+                        >
+                        <small
+                          id="peachSunrise"
+                          class="form-text text-muted font-italic"
+                          >(Pineapple, Coconut Cream, Caramel)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">22k</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br /><br />
+
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <h4 class="h4 display-4 mb-2">Foods</h4>
+              <hr />
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <!-- Main COurse -->
+            <div class="col-12 col-md-6 col-lg-6 mb-n6 order-0">
+              <div class="card border-light p-4">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="display-4 mb-2 text-start">Meals</h4>
+
+                    <span class="text-end mt-1"
+                      ><i class="fa-solid fa-bowl-rice fa-xl"></i
+                    ></span>
+                  </div>
+                  <hr />
+                  <!-- <span>Average satisfaction rating received in the past year.</span> -->
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="chickenRiceBowl"
+                          >Kobo Chicken Rice Bowl</strong
+                        >
+
+                        <small
+                          id="chickenRiceBowl"
+                          class="form-text text-muted text-italic"
+                          >(Blackpepper/Teriyaki/Sambal Matah)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">20k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="beefRiceBowl"
+                          >Kobo Beef Rice Bowl</strong
+                        >
+                        <small
+                          id="beefRiceBowl"
+                          class="form-text text-muted text-italic"
+                          >(Blackpepper/Teriyaki/Sambal Matah)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">22k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="katsuRiceBowl"
+                          >Chicken Katsu</strong
+                        >
+                        <small
+                          id="katsuRiceBowl"
+                          class="form-text text-muted text-italic"
+                          >(Blackpepper/Teriyaki/Sambal Matah)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">20k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Nasi Goreng Kobo</strong></div>
+                    </div>
+                    <div class="col-4 text-right">20k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Mie Goreng Kobo</strong></div>
+                    </div>
+                    <div class="col-4 text-right">20k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-1">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="spaghetti">Spaghetti</strong>
+                        <small
+                          id="spaghetti"
+                          class="form-text text-muted text-italic"
+                          >(Bolognese/Carbonara)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">18k</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br /><br /><br /><br /><br />
+
+          <div class="row">
+            <!-- Appetizer -->
+            <div class="col-12 col-md-6 col-lg-6 mb-4 order-2">
+              <div class="card border-light p-4">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="display-4 mb-2 text-start">Dessert</h4>
+
+                    <span class="text-end mt-1"
+                      ><i class="fa-solid fa-bread-slice fa-xl"></i
+                    ></span>
+                  </div>
+                  <hr />
+                  <!-- <span>Average satisfaction rating received in the past year.</span> -->
+                  <!-- <div class="row align-items-center mb-3">
                                     <div class="col-8 text-black text-left d-md-flex">
                                         <div><strong>Banana Bolen</strong></div>
 
@@ -1014,143 +1099,133 @@
                                     </div>
                                 </div> -->
 
-                                <div class="row align-items-center">
-                                    <div class="col-8 text-black text-left mb-3 d-md-flex">
-                                        <div><strong>Mille Crepes</strong>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        22k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Kobo's Banoffee</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        22k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Kobo's Tiramisu</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        30k
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
+                  <div class="row align-items-center">
+                    <div class="col-8 text-black text-left mb-3 d-md-flex">
+                      <div><strong>Mille Crepes</strong></div>
                     </div>
+                    <div class="col-4 text-right">22k</div>
+                  </div>
 
-                    <!-- Dessert -->
-                    <div class="col-12 col-md-6 col-lg-6 mb-4 order-1">
-                        <div class="card border-light p-4">
-                            <div class="card-body mb-3">
-                                <div class="d-flex justify-content-between">
-
-                                    <h4 class="display-4 mb-2 text-start">Snacks</h4>
-
-                                    <span class="text-end mt-1"><i class="fa-solid fa-cheese fa-xl"></i></span>
-
-                                </div>
-                                <hr>
-                                <!-- <span>Average satisfaction rating received in the past year.</span> -->
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>French Fries</strong></div>
-
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        15k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>French Fries Sausages</strong></div>
-
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        20k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="OnionRing">Onion Ring</strong>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        15k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="tahuLadaGaram">Tahu Lada Garam</strong>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        15k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="Cireng">Cireng</strong>
-                                            <small id="Cireng"
-                                                class="form-text text-muted text-italic">(Saus Blackpepper, Saus Kacang)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        15k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong>Kobo Chicken Wings</strong></div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        20k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-3">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="rotiBakar">Roti Bakar</strong>
-                                            <small id="rotiBakar"
-                                                class="form-text text-muted text-italic">(Coklat/Keju)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        15k
-                                    </div>
-                                </div>
-
-                                <div class="row align-items-center mb-0">
-                                    <div class="col-8 text-black text-left d-md-flex">
-                                        <div><strong aria-describedby="pisangBakar">Pisang Bakar</strong>
-                                            <small id="pisangBakar"
-                                                class="form-text text-muted text-italic">(Coklat/Keju)</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        15k
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Kobo's Banoffee</strong></div>
                     </div>
+                    <div class="col-4 text-right">22k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Kobo's Tiramisu</strong></div>
+                    </div>
+                    <div class="col-4 text-right">30k</div>
+                  </div>
                 </div>
+              </div>
+            </div>
 
-                <!-- <div class="row">
+            <!-- Dessert -->
+            <div class="col-12 col-md-6 col-lg-6 mb-4 order-1">
+              <div class="card border-light p-4">
+                <div class="card-body mb-3">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="display-4 mb-2 text-start">Snacks</h4>
+
+                    <span class="text-end mt-1"
+                      ><i class="fa-solid fa-cheese fa-xl"></i
+                    ></span>
+                  </div>
+                  <hr />
+                  <!-- <span>Average satisfaction rating received in the past year.</span> -->
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>French Fries</strong></div>
+                    </div>
+                    <div class="col-4 text-right">15k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>French Fries Sausages</strong></div>
+                    </div>
+                    <div class="col-4 text-right">20k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="OnionRing">Onion Ring</strong>
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">15k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="tahuLadaGaram"
+                          >Tahu Lada Garam</strong
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">15k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="Cireng">Cireng</strong>
+                        <small
+                          id="Cireng"
+                          class="form-text text-muted text-italic"
+                          >(Saus Blackpepper, Saus Kacang)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">15k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div><strong>Kobo Chicken Wings</strong></div>
+                    </div>
+                    <div class="col-4 text-right">20k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-3">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="rotiBakar">Roti Bakar</strong>
+                        <small
+                          id="rotiBakar"
+                          class="form-text text-muted text-italic"
+                          >(Coklat/Keju)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">15k</div>
+                  </div>
+
+                  <div class="row align-items-center mb-0">
+                    <div class="col-8 text-black text-left d-md-flex">
+                      <div>
+                        <strong aria-describedby="pisangBakar"
+                          >Pisang Bakar</strong
+                        >
+                        <small
+                          id="pisangBakar"
+                          class="form-text text-muted text-italic"
+                          >(Coklat/Keju)</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 text-right">15k</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="row">
                     <div class="col-12 col-md-6 col-lg-4 mb-4">
                         <div class="card border-light p-4">
                             <div class="card-body">
@@ -1176,9 +1251,9 @@
                         </div>
                     </div>
                 </div> -->
-            </div>
+        </div>
 
-            <!-- <div class="section section-sm py-0 mb-5">
+        <!-- <div class="section section-sm py-0 mb-5">
                 <div class="container">
                     <div class="row text-center mb-2">
                         <div class="col">
@@ -1214,13 +1289,13 @@
                                 data-toggle="tooltip" data-placement="top" title="AngryCreative">
                                 <span class="fab fa-angrycreative"></span>
                             </a> -->
-            <!-- </div>
+        <!-- </div>
             </div>
             </div>
             </div> -->
-        </section>
+      </section>
 
-        <!-- <section class="section section-lg pb-0 mt-n6 mt-sm-n9" id="testimoni">
+      <!-- <section class="section section-lg pb-0 mt-n6 mt-sm-n9" id="testimoni">
             <div class="container">
 
                 <div class="row justify-content-center">
@@ -1563,7 +1638,7 @@
             </div>
         </section>
          -->
-        <!-- 
+      <!-- 
         <section class="section section-lg pb-0" id="team">
             <div class="container">
                 <div class="row justify-content-center">
@@ -1629,257 +1704,415 @@
             </div>
         </section> -->
 
-        <section class="section section-md mt-md-n6" id="faq">
-            <div class="container">
-                <div class="row justify-content-center mb-5">
-                    <div class="col-12 text-center mb-4 mb-lg-5">
-                        <h2 class="display-3 mb-4">Frequently Asked Question</h2>
-                        <p class="lead">Punya pertanyaan? coba baca FAQ dibawah ini. Jika masih ada pertanyaan,<br
-                                class="d-none d-lg-inline-block">silahkan hubungi kami di Whatsapp atau Email.</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10">
-                        <div class="accordion" id="accordionExample">
-                            <div class="card border-light mb-0">
-                                <div class="card-header" id="headingOne">
-                                    <h2 class="mb-0"><button
-                                            class="btn btn-link btn-block d-flex justify-content-between align-middle text-left"
-                                            type="button"
-                                            style="display: inline-block !important; width: 100% !important; text-decoration: none; white-space:normal;"
-                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne"><span class="h6 mb-0 font-weight-bold">Kobo
-                                                Coffee buka hari apa dan jam berapa?</span>
-                                        </button></h2>
-                                </div>
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p class="mb-0">Kami buka setiap hari dari pukul 08.00 sampai 21.00</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card border-light mb-0">
-                                <div class="card-header" id="headingTwo">
-                                    <h2 class="mb-0"><button
-                                            class="btn btn-link btn-block d-flex justify-content-between align-middle text-left"
-                                            type="button" style="display: inline-block !important;
-                                            width: 100% !important; text-decoration: none; white-space:normal;"
-                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo"><span class="h6 mb-0 font-weight-bold">Bisa bawa
-                                                mobil ke kobo?</span>
-                                        </button></h2>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p class="mb-0">Bisa, namun tempat parkir kami sangat terbatas, jadi kami sangat
-                                            menyarankan untuk membawa sepeda motor atau menggunakan transportasi online
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card border-light mb-0">
-                                <div class="card-header" id="headingThree">
-                                    <h2 class="mb-0"><button
-                                            class="btn btn-link btn-block d-flex justify-content-between align-middle text-left"
-                                            type="button" style="display: inline-block !important;
-                                        width: 100% !important; text-decoration: none; white-space:normal;"
-                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                            aria-controls="collapseThree"><span class="h6 mb-0 font-weight-bold">Boleh
-                                                bawa anak kecil?</span>
-                                        </button></h2>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p class="mb-0">Mohon maaf kami belum menyediakan fasilitas seperti baby chair
-                                            dan <i>non-smoking</i> area sehingga kami tidak menyarankan pengunjung untuk
-                                            membawa anak kecil</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card border-light mb-0">
-                                <div class="card-header" id="headingFour">
-                                    <h2 class="mb-0"><button
-                                            class="btn btn-link btn-block d-flex justify-content-between align-middle text-left"
-                                            type="button" style="display: inline-block !important;
-                                    width: 100% !important; text-decoration: none; white-space:normal;"
-                                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                                            aria-controls="collapseFour"><span class="h6 mb-0 font-weight-bold">Boleh
-                                                bawa makanan/minuman dari luar?</span>
-                                        </button></h2>
-                                </div>
-                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p class="mb-0">Mohon maaf kami tidak memperkenankan pengunjung untuk membawa
-                                            makanan dan minuman dari luar.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card border-light mb-0">
-                                <div class="card-header" id="headingFive">
-                                    <h2 class="mb-0"><button
-                                            class="btn btn-link btn-block d-flex justify-content-between align-middle text-left"
-                                            type="button" style="display: inline-block !important;
-                                width: 100% !important; text-decoration: none; white-space:normal;"
-                                            data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
-                                            aria-controls="collapseFive"><span class="h6 mb-0 font-weight-bold">Pengen
-                                                nugas di Kobo bisa?</span>
-                                        </button></h2>
-                                </div>
-                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p class="mb-0">Kami menyediakan steker atau colokan listrik disetiap meja,
-                                            sehingga ramah bagi pelajar untuk mengerjakan tugas maupun teman-teman yang
-                                            sedang mencari tempat untuk <i>Work from Cafe</i> (WFC).</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card border-light mb-0">
-                                <div class="card-header" id="headingSix">
-                                    <h2 class="mb-0"><button
-                                            class="btn btn-link btn-block d-flex justify-content-between align-middle text-left"
-                                            type="button" style="display: inline-block !important;
-                                width: 100% !important; text-decoration: none; white-space:normal;"
-                                            data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
-                                            aria-controls="collapseSix"><span class="h6 mb-0 font-weight-bold">Ada WiFi
-                                                di Kobo?</span>
-                                        </button></h2>
-                                </div>
-                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p class="mb-0">Ada dong, kami mengutamakan pelanggan dengan menyediakan
-                                            internet dengan kecepatan 100 mbps, agar pelanggan
-                                            merasa nyaman lama-lama di Kobo Coffee</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card border-light mb-0">
-                                <div class="card-header" id="headingSeven">
-                                    <h2 class="mb-0"><button
-                                            class="btn btn-link btn-block d-flex justify-content-between align-middle text-left"
-                                            type="button" style="display: inline-block !important;
-                                width: 100% !important; text-decoration: none; white-space:normal;"
-                                            data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
-                                            aria-controls="collapseSeven"><span class="h6 mb-0 font-weight-bold">Bisa
-                                                bayar non-tunai?</span>
-                                        </button></h2>
-                                </div>
-                                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p class="mb-0">Kami menyediakan pembayaran non-tunai melalui QRIS dan debit card.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <section class="section section-md mt-md-n6" id="faq">
+        <div class="container">
+          <div class="row justify-content-center mb-5">
+            <div class="col-12 text-center mb-4 mb-lg-5">
+              <h2 class="display-3 mb-4">Frequently Asked Question</h2>
+              <p class="lead">
+                Punya pertanyaan? coba baca FAQ dibawah ini. Jika masih ada
+                pertanyaan,<br class="d-none d-lg-inline-block" />silahkan
+                hubungi kami di Whatsapp atau Email.
+              </p>
             </div>
-        </section>
-
-        <div id="contact">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mt-lg-n6" viewBox="0 0 1440 320">
-                <path fill="#eff1f5" fill-opacity="1"
-                    d="M0,128L60,138.7C120,149,240,171,360,165.3C480,160,600,128,720,138.7C840,149,960,203,1080,192C1200,181,1320,107,1380,69.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
-                </path>
-            </svg>
-
-            <div class="section bg-soft mt-lg-n7">
-                <div class="container">
-                    <div class="row justify-content-center mb-5 ">
-                        <div class="col-12 text-center mb-4 mb-lg-5">
-                            <h2 class="display-3 mb-n5 ">Meet out place</h2>
-                        </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+              <div class="accordion" id="accordionExample">
+                <div class="card border-light mb-0">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block d-flex justify-content-between align-middle text-left"
+                        type="button"
+                        style="
+                          display: inline-block !important;
+                          width: 100% !important;
+                          text-decoration: none;
+                          white-space: normal;
+                        "
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <span class="h6 mb-0 font-weight-bold"
+                          >Kobo Coffee buka hari apa dan jam berapa?</span
+                        >
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseOne"
+                    class="collapse show"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      <p class="mb-0">
+                        Kami buka setiap hari dari pukul 08.00 sampai 21.00
+                      </p>
                     </div>
-                    <div class="row row-grid align-items-center">
-                        <div class="col-12 col-lg-5 order-lg-2">
-                            <div class="card border-light p-4">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between">
+                  </div>
+                </div>
+                <div class="card border-light mb-0">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block d-flex justify-content-between align-middle text-left"
+                        type="button"
+                        style="
+                          display: inline-block !important;
+                          width: 100% !important;
+                          text-decoration: none;
+                          white-space: normal;
+                        "
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        <span class="h6 mb-0 font-weight-bold"
+                          >Bisa bawa mobil ke kobo?</span
+                        >
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      <p class="mb-0">
+                        Bisa, namun tempat parkir kami sangat terbatas, jadi
+                        kami sangat menyarankan untuk membawa sepeda motor atau
+                        menggunakan transportasi online
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-                                        <h4 class="display-5 mb-2 text-center">We are open</h4>
+                <div class="card border-light mb-0">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block d-flex justify-content-between align-middle text-left"
+                        type="button"
+                        style="
+                          display: inline-block !important;
+                          width: 100% !important;
+                          text-decoration: none;
+                          white-space: normal;
+                        "
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        <span class="h6 mb-0 font-weight-bold"
+                          >Boleh bawa anak kecil?</span
+                        >
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      <p class="mb-0">
+                        Mohon maaf kami belum menyediakan fasilitas seperti baby
+                        chair dan <i>non-smoking</i> area sehingga kami tidak
+                        menyarankan pengunjung untuk membawa anak kecil
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-light mb-0">
+                  <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block d-flex justify-content-between align-middle text-left"
+                        type="button"
+                        style="
+                          display: inline-block !important;
+                          width: 100% !important;
+                          text-decoration: none;
+                          white-space: normal;
+                        "
+                        data-toggle="collapse"
+                        data-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        <span class="h6 mb-0 font-weight-bold"
+                          >Boleh bawa makanan/minuman dari luar?</span
+                        >
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseFour"
+                    class="collapse"
+                    aria-labelledby="headingFour"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      <p class="mb-0">
+                        Mohon maaf kami tidak memperkenankan pengunjung untuk
+                        membawa makanan dan minuman dari luar.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-light mb-0">
+                  <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block d-flex justify-content-between align-middle text-left"
+                        type="button"
+                        style="
+                          display: inline-block !important;
+                          width: 100% !important;
+                          text-decoration: none;
+                          white-space: normal;
+                        "
+                        data-toggle="collapse"
+                        data-target="#collapseFive"
+                        aria-expanded="false"
+                        aria-controls="collapseFive"
+                      >
+                        <span class="h6 mb-0 font-weight-bold"
+                          >Pengen nugas di Kobo bisa?</span
+                        >
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseFive"
+                    class="collapse"
+                    aria-labelledby="headingFive"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      <p class="mb-0">
+                        Kami menyediakan steker atau colokan listrik disetiap
+                        meja, sehingga ramah bagi pelajar untuk mengerjakan
+                        tugas maupun teman-teman yang sedang mencari tempat
+                        untuk <i>Work from Cafe</i> (WFC).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-light mb-0">
+                  <div class="card-header" id="headingSix">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block d-flex justify-content-between align-middle text-left"
+                        type="button"
+                        style="
+                          display: inline-block !important;
+                          width: 100% !important;
+                          text-decoration: none;
+                          white-space: normal;
+                        "
+                        data-toggle="collapse"
+                        data-target="#collapseSix"
+                        aria-expanded="false"
+                        aria-controls="collapseSix"
+                      >
+                        <span class="h6 mb-0 font-weight-bold"
+                          >Ada WiFi di Kobo?</span
+                        >
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseSix"
+                    class="collapse"
+                    aria-labelledby="headingSix"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      <p class="mb-0">
+                        Ada dong, kami mengutamakan pelanggan dengan menyediakan
+                        internet dengan kecepatan 100 mbps, agar pelanggan
+                        merasa nyaman lama-lama di Kobo Coffee
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-light mb-0">
+                  <div class="card-header" id="headingSeven">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block d-flex justify-content-between align-middle text-left"
+                        type="button"
+                        style="
+                          display: inline-block !important;
+                          width: 100% !important;
+                          text-decoration: none;
+                          white-space: normal;
+                        "
+                        data-toggle="collapse"
+                        data-target="#collapseSeven"
+                        aria-expanded="false"
+                        aria-controls="collapseSeven"
+                      >
+                        <span class="h6 mb-0 font-weight-bold"
+                          >Bisa bayar non-tunai?</span
+                        >
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseSeven"
+                    class="collapse"
+                    aria-labelledby="headingSeven"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      <p class="mb-0">
+                        Kami menyediakan pembayaran non-tunai melalui QRIS dan
+                        debit card.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                                        <span class="text-end"><i class="fa-solid fa-door-open fa-xl"></i></span>
+      <div id="contact">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="mt-lg-n6"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            fill="#eff1f5"
+            fill-opacity="1"
+            d="M0,128L60,138.7C120,149,240,171,360,165.3C480,160,600,128,720,138.7C840,149,960,203,1080,192C1200,181,1320,107,1380,69.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
 
-                                    </div>
-                                    <hr>
+        <div class="section bg-soft mt-lg-n7">
+          <div class="container">
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 text-center mb-4 mb-lg-5">
+                <h2 class="display-3 mb-n5">Meet out place</h2>
+              </div>
+            </div>
+            <div class="row row-grid align-items-center">
+              <div class="col-12 col-lg-5 order-lg-2">
+                <div class="card border-light p-4">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="display-5 mb-2 text-center">We are open</h4>
 
-                                    <dl class="row">
-                                        <dd>
-                                            <h5 class="display-5 mb-2 text-left">Cafe</h5>
-                                        </dd>
-                                        <dd class="col-md-7 text-center text-md-left">
-                                            Senin - Minggu
-                                        </dd>
-                                        <dt class="col-md-5 text-center mb-3 text-md-right">13.00 - 22.30</dt>
-                                    </dl>
+                      <span class="text-end"
+                        ><i class="fa-solid fa-door-open fa-xl"></i
+                      ></span>
+                    </div>
+                    <hr />
 
-                                    <dl class="row">
-                                        <dd>
-                                            <h5 class="display-5 mb-2 text-left">Roastery</h5>
-                                        </dd>
-                                        <dd class="col-md-7 text-center text-md-left">
-                                            Senin, Kamis
-                                        </dd>
-                                        <dt class="col-md-5 text-center text-md-right"> 08.00 - 21.00</dt>
-                                    </dl>
-                                    <br>
-                                    <div class="d-flex justify-content-between">
+                    <dl class="row">
+                      <dd>
+                        <h5 class="display-5 mb-2 text-left">Cafe</h5>
+                      </dd>
+                      <dd class="col-md-7 text-center text-md-left">
+                        Senin - Minggu
+                      </dd>
+                      <dt class="col-md-5 text-center mb-3 text-md-right">
+                        13.00 - 22.30
+                      </dt>
+                    </dl>
 
-                                        <h4 class="display-5 mb-2 text-center">Give us a review</h4>
+                    <dl class="row">
+                      <dd>
+                        <h5 class="display-5 mb-2 text-left">Roastery</h5>
+                      </dd>
+                      <dd class="col-md-7 text-center text-md-left">
+                        Senin, Kamis
+                      </dd>
+                      <dt class="col-md-5 text-center text-md-right">
+                        08.00 - 21.00
+                      </dt>
+                    </dl>
+                    <br />
+                    <div class="d-flex justify-content-between">
+                      <h4 class="display-5 mb-2 text-center">
+                        Give us a review
+                      </h4>
 
-                                        <span class="text-end"><i class="fa-solid fa-feather-pointed fa-xl"></i></span>
+                      <span class="text-end"
+                        ><i class="fa-solid fa-feather-pointed fa-xl"></i
+                      ></span>
+                    </div>
+                    <hr />
+                    <div class="row mb-3 align-items-center">
+                      <div class="col-lg-6 text-left">
+                        <span>Send us a letter</span>
+                      </div>
 
-                                    </div>
-                                    <hr>
-                                    <div class="row mb-3 align-items-center">
-                                        <div class="col-lg-6 text-left"><span>Send us a letter</span></div>
+                      <div class="col-lg-6 text-right">
+                        <a
+                          href="mailto:kobo.coffee@gmail.com"
+                          target="_blank"
+                          class="btn btn-dark btn-md shadow-soft btn-block"
+                          data-loading-text="Sending"
+                        >
+                          <span>Gmail</span>
+                          <span class="icon icon-xs ml-2"
+                            ><i class="fa-solid fa-envelope"></i>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                      <div class="col-lg-6 text-left"><span>Chat us</span></div>
 
-                                        <div class="col-lg-6 text-right"><a href="mailto:kobo.coffee@gmail.com"
-                                                target="_blank" class="btn btn-dark btn-md shadow-soft btn-block"
-                                                data-loading-text="Sending">
-                                                <span>Gmail</span>
-                                                <span class="icon icon-xs ml-2"><i class="fa-solid fa-envelope"></i>
-                                                </span>
-                                            </a></div>
-                                    </div>
-                                    <div class="row mb-3 align-items-center">
-                                        <div class="col-lg-6 text-left"><span>Chat us</span></div>
+                      <div class="col-lg-6 text-right">
+                        <a
+                          href="https://wa.me/+6289526749919?text=Hallo kobo coffee, ngobrol yuk?"
+                          target="_blank"
+                          class="btn btn-dark btn-md shadow-soft btn-block"
+                          data-loading-text="Sending"
+                        >
+                          <span>Whatsapp</span>
+                          <span class="icon icon-xs ml-2"
+                            ><span class="fa-brands fa-whatsapp"></span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
 
-                                        <div class="col-lg-6 text-right"><a
-                                                href="https://wa.me/+6289526749919?text=Hallo kobo coffee, ngobrol yuk?"
-                                                target="_blank" class="btn btn-dark btn-md shadow-soft btn-block"
-                                                data-loading-text="Sending">
-                                                <span>Whatsapp</span>
-                                                <span class="icon icon-xs ml-2"><span
-                                                        class="fa-brands fa-whatsapp"></span>
-                                                </span>
-                                            </a></div>
-                                    </div>
+                    <div class="row mb-0 align-items-center">
+                      <div class="col-lg-6 text-left"><span>Tag us</span></div>
 
-                                    <div class="row mb-0 align-items-center">
-                                        <div class="col-lg-6 text-left"><span>Tag us</span></div>
-
-                                        <div class="col-lg-6 text-right"><a
-                                                href="https://www.instagram.com/kobocoffee/?hl=id" target="_blank"
-                                                class="btn btn-dark btn-md shadow-soft btn-block"
-                                                data-loading-text="Sending">
-                                                <span>Instagram</span>
-                                                <span class="icon icon-xs ml-2"><span
-                                                        class="fa-brands fa-instagram"></span>
-                                                </span>
-                                            </a></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- 
+                      <div class="col-lg-6 text-right">
+                        <a
+                          href="https://www.instagram.com/kobocoffee/?hl=id"
+                          target="_blank"
+                          class="btn btn-dark btn-md shadow-soft btn-block"
+                          data-loading-text="Sending"
+                        >
+                          <span>Instagram</span>
+                          <span class="icon icon-xs ml-2"
+                            ><span class="fa-brands fa-instagram"></span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 
                             <div class="card border-light p-2 mt-md-3 mt-3">
                                 <div class="card-body">
                                     <div class="row align-items-center">
@@ -1901,59 +2134,79 @@
                                     </div>
                                 </div>
                             </div> -->
+              </div>
+              <div class="col-12 col-lg-6 mr-lg-auto mt-3 mt-md-0">
+                <div class="card border-light p-4">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.616155515033!2d107.75930070723847!3d-7.047811154259869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c111d3e34c7d%3A0xd631044e09046eb8!2sKOBO%20Coffee!5e0!3m2!1sen!2sid!4v1675261694690!5m2!1sen!2sid"
+                    width="100%"
+                    height="450"
+                    style="border: 0; border-radius: 15px"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
 
-                        </div>
-                        <div class="col-12 col-lg-6 mr-lg-auto mt-3 mt-md-0">
-                            <div class="card border-light p-4">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.616155515033!2d107.75930070723847!3d-7.047811154259869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c111d3e34c7d%3A0xd631044e09046eb8!2sKOBO%20Coffee!5e0!3m2!1sen!2sid!4v1675261694690!5m2!1sen!2sid"
-                                    width="100%" height="450" style="border:0; border-radius: 15px;" allowfullscreen=""
-                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                                <div class="card-body">
-                                    <h5 class=" mb-2">We can't wait to see you</h5>
-                                    <p>Hurry up! u need a coffee...</p>
-                                    <div class="col-12">
-                                        <a href="https://goo.gl/maps/vGNyG1gUDZ6qQDA5A" target="_blank"
-                                            class="btn btn-dark shadow-soft btn-block" data-loading-text="Sending">
-                                            <span>Go to location</span>
-                                            <span class="icon icon-xs ml-2">
-                                                <i class="fa-solid fa-diamond-turn-right"></i>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                  <div class="card-body">
+                    <h5 class="mb-2">We can't wait to see you</h5>
+                    <p>Hurry up! u need a coffee...</p>
+                    <div class="col-12">
+                      <a
+                        href="https://goo.gl/maps/vGNyG1gUDZ6qQDA5A"
+                        target="_blank"
+                        class="btn btn-dark shadow-soft btn-block"
+                        data-loading-text="Sending"
+                      >
+                        <span>Go to location</span>
+                        <span class="icon icon-xs ml-2">
+                          <i class="fa-solid fa-diamond-turn-right"></i>
+                        </span>
+                      </a>
                     </div>
-
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-
+      </div>
     </main>
 
-    <footer class="footer py-4 mt-n4 ">
-        <div class="sticky-right">
-            <a href="#home"
-                class="icon icon-primary icon-md btn btn-icon-only btn-white border border-soft shadow-soft animate-up-3">
-                <span class="fas fa-chevron-up"></span>
-            </a>
-        </div>
-        <div class="container">
-            <hr class="bg-light">
-            <div class="row ">
-                <div class="col mb-md-0">
-                    <div class="d-flex text-center justify-content-center align-items-center" role="contentinfo">
-                        <p class="font-weight-normal font-small mb-0">Copyright © Kobo Coffee - <span
-                                class="current-year">
-                                <script>document.write(/\d{4}/.exec(Date())[0])</script>
-                            </span>. All rights reserved. Customize by <a href="https://www.linkedin.com/in/fahmisabilad/" target="_blank" style="text-decoration: none;"><span
-                                style="color:#313bce;font-weight: 500;">Fahmi</span> </a></p>
-                    </div>
-                </div>
+    <footer class="footer py-4 mt-n4">
+      <div class="sticky-right">
+        <a
+          href="#home"
+          class="icon icon-primary icon-md btn btn-icon-only btn-white border border-soft shadow-soft animate-up-3"
+        >
+          <span class="fas fa-chevron-up"></span>
+        </a>
+      </div>
+      <div class="container">
+        <hr class="bg-light" />
+        <div class="row">
+          <div class="col mb-md-0">
+            <div
+              class="d-flex text-center justify-content-center align-items-center"
+              role="contentinfo"
+            >
+              <p class="font-weight-normal font-small mb-0">
+                Copyright © Kobo Coffee -
+                <span class="current-year">
+                  <script>
+                    document.write(/\d{4}/.exec(Date())[0]);
+                  </script> </span
+                >. All rights reserved. Customize by
+                <a
+                  href="https://www.linkedin.com/in/fahmisabilad/"
+                  target="_blank"
+                  style="text-decoration: none"
+                  ><span style="color: #313bce; font-weight: 500">Fahmi</span>
+                </a>
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Core -->
@@ -1970,17 +2223,11 @@
     <script src="./assets/js/swipe.js"></script>
 
     <script>
-        $(document).ready(function () {
-
-            $(".navbar-nav li a").click(function (event) {
-
-                $(".navbar-collapse").collapse('hide');
-
-            });
-
+      $(document).ready(function () {
+        $(".navbar-nav li a").click(function (event) {
+          $(".navbar-collapse").collapse("hide");
         });
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
