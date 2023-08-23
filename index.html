@@ -51,7 +51,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     <!-- <link type="text/css" href="./vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet"> -->
 
     <!-- Swipe CSS -->
@@ -62,6 +63,50 @@
         width: 40px;
       }
 
+      .gallery-image {
+        border-radius: 15px;
+      }
+
+      .join-gallery {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      /* Add a custom class to target the swiper-slide elements */
+      .custom-swiper-slide {
+        display: flex; /* Use flexbox for vertical centering */
+        justify-content: center; /* Center items horizontally */
+        align-items: center; /* Center items vertically */
+      }
+
+      /* Center-crop the images within swiper-slide elements */
+      .custom-swiper-slide .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; /* Fill the slide height */
+      }
+
+      .custom-swiper-slide .gallery-image {
+        object-fit: cover;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      /* Center-crop the images within swiper-slide elements on mobile view */
+      @media (max-width: 767px) {
+        .custom-swiper-slide .card {
+          width: 100%; /* Adjust card width to fill the slide */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .custom-swiper-slide .gallery-image {
+          object-fit: cover;
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
       @media (max-width: 768px) {
         .icon-image {
           width: 20px;
@@ -155,6 +200,9 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a href="index.html#gallery" class="nav-link"> Gallery </a>
+              </li>
+              <li class="nav-item">
                 <a href="index.html#menu" class="nav-link"> Menu </a>
               </li>
               <!-- <li class="nav-item">
@@ -215,7 +263,12 @@
     </header>
     <main>
       <!-- Hero -->
-      <section class="section section-header text-dark pb-md-1" id="top">
+      <section
+        class="section section-header text-dark pb-md-1"
+        data-wow-duration="2s"
+        data-wow-delay="5s"
+        id="top"
+      >
         <div class="container">
           <div class="row justify-content-center">
             <div
@@ -320,7 +373,11 @@
         </div>
       </section>
 
-      <section class="section section-lg py-0">
+      <section
+        class="section section-lg py-0"
+        data-wow-duration="2s"
+        data-wow-delay="5s"
+      >
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
@@ -367,6 +424,167 @@
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-md" id="gallery">
+        <div class="container">
+          <div class="row justify-content-center mb-5">
+            <div class="col-12 text-center">
+              <h2 class="display-3 mb-4">Meet Our Place</h2>
+              <p class="lead">Lihat <b>Kobo Coffee</b> lebih dekat</p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+              <swiper-container autoplay="true" delay="5000" speed="2000">
+                <!-- lazy="true" attribute will automatically render the prelaoder element -->
+                <swiper-slide class="custom-swiper-slide" lazy="true">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img
+                        src="/assets/img/gallery/kobo-cup.JPG"
+                        height="400px"
+                        class="gallery-image"
+                      />
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class="custom-swiper-slide" lazy="true">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img
+                        src="/assets/img/gallery/front-kobo.jpg"
+                        height="400px"
+                        class="gallery-image"
+                      />
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class="custom-swiper-slide" lazy="true">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img
+                        src="/assets/img/gallery/frontbar-vertical.jpg"
+                        height="400px"
+                        class="gallery-image"
+                      />
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class="custom-swiper-slide" lazy="true">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                        src="/assets/img/gallery/grinder-coffee.JPG"
+                        height="400px"
+                        class="gallery-image"
+                      />
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class="custom-swiper-slide" lazy="true">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img
+                        src="/assets/img/gallery/kopi-susu.jpg"
+                        height="400px"
+                        class="gallery-image"
+                      />
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class="custom-swiper-slide" lazy="true">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img
+                        src="/assets/img/gallery/mille-crepe-2.jpg"
+                        height="400px"
+                        class="gallery-image"
+                      />
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class="custom-swiper-slide" lazy="true">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img
+                        src="/assets/img/gallery/rooftop.jpg"
+                        height="400px"
+                        class="gallery-image"
+                      />
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class="custom-swiper-slide" lazy="true">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img
+                        src="/assets/img/gallery/coffee-bar.JPG"
+                        height="400px"
+                        class="gallery-image"
+                      />
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class="custom-swiper-slide" lazy="true">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img
+                        src="/assets/img/gallery/grinder-vertical.jpg"
+                        height="400px"
+                        class="gallery-image"
+                      />
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class="custom-swiper-slide" lazy="true">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img
+                        src="/assets/img/gallery/roastery-machine.webp"
+                        height="400px"
+                        class="gallery-image"
+                      />
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class="custom-swiper-slide" lazy="true">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img
+                        src="/assets/img/gallery/dessert.jpg"
+                        height="400px"
+                        class="gallery-image"
+                      />
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class="custom-swiper-slide" lazy="true">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img
+                        src="/assets/img/gallery/drinks.jpg"
+                        height="400px"
+                        class="gallery-image"
+                      />
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class="custom-swiper-slide" lazy="true">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img
+                        src="/assets/img/gallery/mille-crepe.jpg"
+                        height="400px"
+                        class="gallery-image"
+                      />
+                    </div>
+                  </div>
+                </swiper-slide>
+              </swiper-container>
             </div>
           </div>
         </div>
@@ -1269,7 +1487,7 @@
                                     <p class="mt-2 text-black">Ecovill</p>
                                 </center>
                             </a>
-                            <!-- <a href="#" aria-label="Digg brand logo" class="icon icon-xl icon-dark mr-4 mr-sm-5"
+                           <a href="#" aria-label="Digg brand logo" class="icon icon-xl icon-dark mr-4 mr-sm-5"
                                 data-toggle="tooltip" data-placement="top" title="Digg">
                                 <span class="fab fa-digg"></span>
                             </a>
@@ -2143,7 +2361,6 @@
                     height="450"
                     style="border: 0; border-radius: 15px"
                     allowfullscreen=""
-                    loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
                   ></iframe>
 
@@ -2209,7 +2426,6 @@
       </div>
     </footer>
 
-    <!-- Core -->
     <script src="./vendor/popper.js/dist/umd/popper.min.js"></script>
     <script src="./vendor/headroom.js/dist/headroom.min.js"></script>
 
